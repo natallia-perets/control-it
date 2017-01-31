@@ -1,0 +1,13 @@
+ <div ng-repeat="goal in $ctrl.goals">
+
+	<button type="button" class="btn btn-default" ng-click="goal.isCollapsed = !goal.isCollapsed">{{goal.name}}</button>
+
+      <uib-progress>
+                  <uib-bar ng-repeat="bar in goal.stacked" value="bar.value" type="{{bar.type}}">
+                        <span>{{bar.value}}%</span>
+                  </uib-bar>
+      </uib-progress>
+      <div uib-collapse = "goal.isCollapsed">
+		<div class="well well-lg">Log Entries</div>
+	</div>
+</div>

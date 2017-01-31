@@ -1,0 +1,12 @@
+{
+    "name" : "control-it",
+    "version" : "0.0.0",
+    "main" : "server.js",
+    "dependencies" : {
+        "express" : "^4.13.4",
+        "angular" : "1.5.7",
+        "angular-ui-bootstrap" : "1.0.0"
+    },
+    "author" : "NP"
+
+}
